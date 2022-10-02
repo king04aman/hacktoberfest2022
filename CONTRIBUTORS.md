@@ -13,6 +13,7 @@
 | ------|----------|---------- |
 | Aman Kumar | <a href="https://github.com/king04aman/">Aman Kumar</a> | <a href="mailto:aman.kumar@esportzvio.com">E-Mail</a> |
 | Sarwagya Singh | <a href="https://github.com/0xsarwagya/">Sarwagya Singh</a> | <a href="mailto:sarwagya.singh@esportzvio.com">E-Mail</a> |
+| ThePotentate | <a href="https://github.com/thepotentateop/">ThePotentate</a> | <a href="mailto:hello@email.com">E-Mail</a> |
 
 Thanks to everyone who helped in building this Repository :)
 
