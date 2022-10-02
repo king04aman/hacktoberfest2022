@@ -15,7 +15,6 @@ Hacktoberfest encourages participation in the open source community, which grows
 
  - 💻 C
  - 💻 C++
- - 💻 HTML
  - 💻 PHP
  - 💻 Python
  - 💻 Java
