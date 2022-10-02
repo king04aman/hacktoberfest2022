@@ -17,6 +17,7 @@
 | Sarwagya Singh | <a href="https://github.com/0xsarwagya/">Sarwagya Singh</a> | <a href="mailto:sarwagya.singh@esportzvio.com">E-Mail</a> |
 | Rohan Gupta | <a href="https://github.com/rohan09-raj/">Rohan Gupta</a> | <a href="rajrohan1419@gmail.com">E-Mail</a> |
 | ThePotentate | <a href="https://github.com/thepotentateop/">ThePotentate</a> | <a href="mailto:hello@email.com">E-Mail</a> |
+| Dhruv Arora | <a href="https://github.com/lord-benjamin/">Dhruv Arora</a> | <a href="mailto:dhruvarora2612@gmail.com">E-Mail</a> |
 
 
 Thanks to everyone who helped in building this Repository :)
