@@ -20,6 +20,23 @@ Hacktoberfest encourages participation in the open source community, which grows
  - 💻 Java
  - 💻 Javascript
 
+## Programs
+ - Write a program to print the sum of digit of a number.
+ - Write a program to print the Fibonacci series up to a given number.
+ - Write a program to check a given number is palindrom or not.
+ - Write a program to check a given number is armstrong or not.
+ - Write a program to find different between sum and product of a number.
+ - Write a program to find all setbits in a number.
+ - Write a program to print the Floyds triangle.
+ - Write a program to swap the values of two variables.
+ - Write a program to find given number is power of two or not.
+ - Write a program to print the reverse of a given string.
+ - Write a program to merge two sorted array without extra space.
+ - Write a program to count vowel in a given string.
+ - Write a program for addition two nxm matrices.
+ - Write a program for multiplication fo nxm matrices.
+
+
 ### Don't forget to read the [contributing](CONTRIBUTING.md) rules to be successfully merged your PR and get rewards!!!
  - Visit <a href="hacktoberfest.com" target="_blank">Hacktoberfest</a> to get more information about Hacktoberfest 2022!!!
  - Visit <a href="https://hacktoberfest-swag.com" target="_blank">Hacktoberfest-swag</a> to know more about your swags and rewards!!!
