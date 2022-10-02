@@ -27,7 +27,8 @@ Hacktoberfest encourages participation in the open source community, which grows
  - Visit <a href="https://hacktoberfest-swag.com" target="_blank">Hacktoberfest-swag</a> to know more about your swags and rewards!!!
 
 ## Note:
- _All contributors who have followed the rules to contribute get successfully merged PR. Don't forget to follow_!!!
+ -  _All contributors who have followed the rules to contribute get successfully merged PR. Don't forget to follow_!!!
+ - _Don't forget to star this repo_.
 ```
 Always make more then 4 pull request, lets you have made only 4 pull request to different projects
 but one project is excluded from hackoctoberfest event then your pull request will not be count and 
