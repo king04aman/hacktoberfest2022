@@ -27,6 +27,7 @@ Hacktoberfest encourages participation in the open source community, which grows
 ## Note:
  -  _All contributors who have followed the rules to contribute get successfully merged PR. Don't forget to follow_!!!
  - _Don't forget to star this repo_.
+ - _Don't forget to add your name at [contributors](CONTRIBUTORS.md)_.
 ```
 Always make more then 4 pull request, lets you have made only 4 pull request to different projects
 but one project is excluded from hackoctoberfest event then your pull request will not be count and 
