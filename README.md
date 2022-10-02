@@ -19,7 +19,6 @@ Hacktoberfest encourages participation in the open source community, which grows
  - 💻 Python
  - 💻 Java
  - 💻 Javascript
- - 💻 PHP
 
 ### Don't forget to read the [contributing](CONTRIBUTING.md) rules to be successfully merged your PR and get rewards!!!
  - Visit <a href="hacktoberfest.com" target="_blank">Hacktoberfest</a> to get more information about Hacktoberfest 2022!!!
