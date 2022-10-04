@@ -1,0 +1,9 @@
+x = 34
+y = 56
+print("Initial Value of x =", x)
+print("Initial Value of y =", y)
+temp = x
+x = y
+y = temp
+print("\nAfter swaping value of x =", x)
+print("After swaping value of y =", y)
