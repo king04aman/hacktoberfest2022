@@ -22,6 +22,7 @@
 | Apurva Dubey | <a href="https://github.com/umbridge/">Apurva Dubey</a> | <a href="mailto:apurva925dubey@gmail.com">E-Mail</a> |
 | Agus Cahyono | <a href="https://github.com/balitax/">Agus Cahyono</a> | <a href="mailto:cahyo.mamen@gmail.com">E-Mail</a> |
 | Gagan Chordia | <a href="https://github.com/gagan-gv/">Agus Cahyono</a> | <a href="mailto:chordiagagan@gmail.com">E-Mail</a> |
+| Anant Jain | <a href="https://github.com/AnantJainn">Anant Jain</a> | <a href="mailto:ritujainanant2810@gmail.com">E-Mail</a> |
 
 Thanks to everyone who helped in building this Repository :)
 
