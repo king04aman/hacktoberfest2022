@@ -1,4 +1,5 @@
 // program to check if the string is palindrome or not
+// contributor: Shubhambawner 
 
 function checkPalindrome(string) {
     for (let i = 0; i < string.length / 2; i++) 
