@@ -24,6 +24,7 @@
 | Agus Cahyono | <a href="https://github.com/balitax/">Agus Cahyono</a> | <a href="mailto:cahyo.mamen@gmail.com">E-Mail</a> |
 | Gagan Chordia | <a href="https://github.com/gagan-gv/">Agus Cahyono</a> | <a href="mailto:chordiagagan@gmail.com">E-Mail</a> |
 | Rahul Kumar | <a href="https://github.com/krrahul23/">Rahul Kumar</a> | <a href="mailto:raulk023@gmail.com">E-Mail</a> |
+| Rishabh Srivastava | <a href="https://github.com/RishabhSrivastava1423">Rishabh Srivastava</a> | <a href="mailto:rishabhsrivastava1409@gmail.com">E-Mail</a> |
 
 Thanks to everyone who helped in building this Repository :)
 
