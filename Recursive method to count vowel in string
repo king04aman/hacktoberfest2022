@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+// Function to check the Vowel
+bool isVowel(char ch)
+{
+    ch = toupper(ch);
+    return (ch=='A' || ch=='E' || ch=='I' ||
+                        ch=='O' || ch=='U');
+}
+ 
+ 
+int cntVovels(string str, int n)
+{
+    if (n == 1)
+        return isVowel(str[n-1]);
+ 
+    return cntVovels(str, n-1) + isVowel(str[n-1]);
+}
