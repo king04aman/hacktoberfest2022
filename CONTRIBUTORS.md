@@ -27,6 +27,7 @@
 | Pranauv Kumar | <a href="https://github.com/Pranauv-Kumar1803/">Pranauv Kumar</a> | <a href="mailto:pranauv1803@gmail.com">E-Mail</a> |
 | Shubham Bawner | <a href="https://github.com/Shubhambawner/">Shubham Bawner</a> | <a href="mailto:wurtzreaxnwittigreaxn@gmail.com">E-Mail</a> |
 | Rahul Kumar | <a href="https://github.com/krrahul23/">Rahul Kumar</a> | <a href="mailto:raulk023@gmail.com">E-Mail</a> |
+| Shwetha Srikanth | <a href="https://github.com/shwe14101/">Shwetha Srikanth</a> | <a href="mailto:shwethasrikanth14@gmail.com">E-Mail</a> |
 | Rishabh Srivastava | <a href="https://github.com/RishabhSrivastava1423">Rishabh Srivastava</a> | <a href="mailto:rishabhsrivastava1409@gmail.com">E-Mail</a> |
 
 Thanks to everyone who helped in building this Repository :)
