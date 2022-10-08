@@ -1,21 +1,18 @@
-// Coded by: rohan09-raj (GitHub Username)
-class Fibonacci {
-
-  static int n1 = 0, n2 = 1, n3 = 0;
-
-  static void printFibonacci(int count) {
-    if (count > 0) {
-      n3 = n1 + n2;
-      n1 = n2;
-      n2 = n3;
-      System.out.print(" " + n3);
-      printFibonacci(count - 1);
-    }
-  }
-
-  public static void main(String args[]) {
-    int count = 10;
-    System.out.print(n1 + " " + n2);
-    printFibonacci(count - 2);
-  }
+public class FibonacciCalc{
+	public static int fibonacciRecursion(int n){
+	if(n == 0){
+		return 0;
+	}
+	if(n == 1 || n == 2){
+			return 1;
+		}
+	return fibonacciRecursion(n-2) + fibonacciRecursion(n-1);
+	}
+    public static void main(String args[]) {
+	int maxNumber = 10;
+	System.out.print("Fibonacci Series of "+maxNumber+" numbers: ");
+	for(int i = 0; i < maxNumber; i++){
+			System.out.print(fibonacciRecursion(i) +" ");
+		}
+	}
 }
