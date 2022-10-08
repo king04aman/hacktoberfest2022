@@ -1,3 +1,5 @@
+#GITHUB USERNAME: kbhavre
+
 num = int(input("Enter a 3 digit number : "))
  
 s = 0
