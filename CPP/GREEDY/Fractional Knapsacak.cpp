@@ -50,7 +50,7 @@ double fractionalKnapsack(int W, struct Item arr[], int N)
         }
     }
  
-    // Returning final value
+    
     return finalvalue;
 }
  
