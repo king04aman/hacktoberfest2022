@@ -31,7 +31,7 @@
 | Atharva Rane | <a href="https://github.com/atharane/">Atharva Rane</a> | <a href="mailto:atharvarane051102@gmail.com">E-Mail</a> |
 | Shwetha Srikanth | <a href="https://github.com/shwe14101/">Shwetha Srikanth</a> | <a href="mailto:shwethasrikanth14@gmail.com">E-Mail</a> |
 | Rishabh Srivastava | <a href="https://github.com/RishabhSrivastava1423">Rishabh Srivastava</a> | <a href="mailto:rishabhsrivastava1409@gmail.com">E-Mail</a> |
-
+| K.Kirtana | <a href="https://github.com/30kirtana">K.Kirtana</a> | <a href="mailto:raipurkirtanak@gmail.com">E-mail</a> |
 Thanks to everyone who helped in building this Repository :)
 
 # Happy Hacking 💻
