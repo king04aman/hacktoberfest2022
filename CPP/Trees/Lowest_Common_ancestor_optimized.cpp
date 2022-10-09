@@ -1,3 +1,4 @@
+//contibutor: ChakitBhandari
 TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* n1, TreeNode* n2) {
     if(root == NULL)
     return NULL;
