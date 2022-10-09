@@ -12,9 +12,10 @@ import Login from './components/pages/Login';
 import Error from './components/pages/Error';
 function App() {
 
-  const [authorize, setauthorize] = useState(false)
-  
-
+  const [authorize, setauthorize] = useState(true) // change it to false to enable authentication 
+                                                  // username :- earthboxer 
+                                                  // password :- earthboxer
+                                                  
 
 
   return (

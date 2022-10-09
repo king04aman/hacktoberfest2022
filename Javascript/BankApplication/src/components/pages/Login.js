@@ -12,7 +12,7 @@ function Login({ authorize, setauthorize }) {
         e.preventDefault()
 
         if (username !== "" && password !== "") {
-            if (username === "earthboxer" && password === "7024885234") {
+            if (username === "earthboxer" && password === "earthboxer") {
                 history.push("/home")
                 setauthorize(true)
 
