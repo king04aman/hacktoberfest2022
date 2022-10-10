@@ -1,0 +1,75 @@
+class Solution {
+  public:
+  vector<vector<int>>grid;
+  int n,m;
+  void dfs(vector<vector<int>>&visited,int i,int j)
+    {
+        if(i<0 || j<0)
+        {
+            return;
+        }
+        if(i>=n || j>=m)
+        {
+            return;
+        }
+        if(grid[i][j]==0 || visited[i][j]==1)
+        {
+            return;
+        }
+        visited[i][j]=1;
+        dfs(visited,i+1,j);
+        dfs(visited,i-1,j);
+        dfs(visited,i,j+1);
+        dfs(visited,i,j-1);
+    }
+  int no_of_islands()
+  {
+      int cnt=0;
+        // n=grid.size();
+        // m=grid[0].size();
+        vector<vector<int>>visited;
+        for(int i=0;i<n;i++)
+        {
+            vector<int>temp;
+            for(int j=0;j<m;j++)
+            {
+                temp.push_back(-1);
+            }
+            visited.push_back(temp);
+        }
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<m;j++)
+            {
+                if(visited[i][j]==-1 && grid[i][j]==1)
+                {
+                    dfs(visited,i,j);
+                    cnt++;
+                }
+            }
+        }
+        return cnt;
+  }
+    vector<int> numOfIslands(int n1, int m1, vector<vector<int>> &operators) {
+        // code here
+        n=n1;
+        m=m1;
+        for(int i=0;i<n;i++)
+        {
+            vector<int>t;
+            for(int j=0;j<m;j++)
+            {
+                t.push_back(0);
+            }
+            grid.push_back(t);
+        }
+        vector<int>ans;
+        for(int i=0;i<operators.size();i++)
+        {
+            grid[operators[i][0]][operators[i][1]]=1;
+            int n=no_of_islands();
+            ans.push_back(n);
+        }
+        return ans;
+    }
+};
