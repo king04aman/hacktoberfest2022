@@ -1,0 +1,113 @@
+#include<bits/stdc++.h>
+using namespace std;
+void BubbleSort(vector<int>& arr,int n) {
+    for(int i=0;i<n;i++) {
+        for(int j=0;j<n-i-1;j++) {
+            if(arr[j]>arr[j+1]) {
+                swap(arr[j+1],arr[j]);
+            }
+        }
+    }   
+}
+void SelectionSort(vector<int>& arr,int n) {
+    for(int i=0;i<n;i++) {
+        int Min=i;
+        for(int j=i+1;j<n;j++) {
+            if(arr[j]<arr[Min]) {
+                Min=j;
+            }
+        }        
+        swap(arr[i],arr[Min]);        
+    }    
+}
+void InsertionSort(vector<int>& arr,int n) {
+    for(int i=1;i<n;i++) {
+        int key=arr[i],j=i;
+        while(j>=1 and arr[j-1]>key) {
+            arr[j]=arr[j-1];
+            j--;
+        } 
+        arr[j]=key;
+    }    
+}
+void Merge(vector<int>& arr,int l,int mid,int r) {
+    int l1=mid-l+1,l2=r-mid;
+    vector<int> left(l1),right(l2);
+    for(int i=0;i<l1;i++) {
+        left[i]=arr[l+i];
+    }
+    for(int i=0;i<l2;i++) {
+        right[i]=arr[mid+i+1];
+    }
+    int i=0,j=0,k=l;
+    while(i<l1 and j<l2) {
+        if(left[i]<=right[j]) {
+            arr[k]=left[i];
+            i++;
+        }
+        else {
+            arr[k]=right[j];
+            j++;
+        }
+        k++;
+    }
+    while(i<l1) {
+        arr[k]=left[i];
+        k++;
+        i++;
+    }
+    while(j<l2) {
+        arr[k]=right[j];
+        k++;
+        j++;
+    }
+}
+void MergeSort(vector<int>& arr,int l,int r) {
+    if(l<r) {
+        int mid=l+(r-l)/2;
+        MergeSort(arr,l,mid);
+        MergeSort(arr,mid+1,r);
+        Merge(arr,l,mid,r);
+    } 
+    
+}
+int partition(vector<int>& arr,int low,int high) {
+    int pivot=arr[low],left=low,right=high;
+    while(left<right) {
+        while(arr[left]<=pivot) {
+            left++;
+        }
+        while(arr[right]>pivot) {
+            right--;
+        }
+        if(left<right)
+            swap(arr[left],arr[right]);            
+    }
+    arr[low]=arr[right];
+    arr[right]=pivot;
+    return right;
+}
+void QuickSort(vector<int>& arr,int low,int high) {
+    if(low<high) {
+        int p=partition(arr,low,high);
+        QuickSort(arr,low,p-1);
+        QuickSort(arr,p+1,high);
+    }
+}
+int main() {
+    int n;
+    cin>>n;
+    vector<int> arr(n);    
+    for(int i=0;i<n;i++) {
+        cin>>arr[i];        
+    }    
+    //BubbleSort(arr,n);
+    //SelectionSort(arr,n);
+    //InsertionSort(arr,n);
+    //MergeSort(arr,0,n-1);
+    //QuickSort(arr,0,n-1);
+    cout<<"Sorted Array:\n";
+    for(int i=0;i<n;i++) {
+        cout<<arr[i]<<" ";
+    }
+}
