@@ -13,6 +13,7 @@
   
 | Name | Github Link | Email ID |
 | ------|----------|---------- |
+| Arnab Nandi | <a href="https://github.com/arnab7070/">Arnab Nandi</a> | <a href="mailto:arnabnandi7074@gmail.com">E-Mail</a> |
 | Aman Kumar | <a href="https://github.com/king04aman/">Aman Kumar</a> | <a href="mailto:aman.kumar@esportzvio.com">E-Mail</a> |
 | Sarwagya Singh | <a href="https://github.com/0xsarwagya/">Sarwagya Singh</a> | <a href="mailto:sarwagya.singh@esportzvio.com">E-Mail</a> |
 | Prashant Kumar | <a href="https://github.com/prashantty/">Prashant Kumar</a> | <a href="mailto:prashantty9991@gmail.com">E-Mail</a> |
