@@ -1,20 +1,28 @@
-#include <iostream>  
-using namespace std;  
-int main()  
-{  
-int n,r,sum=0,temp;    
-cout<<"Enter the Number=  ";    
-cin>>n;    
-temp=n;    
-while(n>0)    
-{    
-r=n%10;    
-sum=sum+(r*r*r);    
-n=n/10;    
-}    
-if(temp==sum)    
-cout<<"Armstrong Number."<<endl;    
-else    
-cout<<"Not Armstrong Number."<<endl;   
-return 0;  
-}  
+//if a given 3-digit no. is armstrong or not.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num, originalNum, remainder, result = 0;
+    cout << "Enter a three-digit integer: ";
+    cin >> num;
+    originalNum = num;
+
+    while (originalNum != 0) {
+        // remainder contains the last digit
+        remainder = originalNum % 10;
+        
+        result += remainder * remainder * remainder;
+        
+        // removing last digit from the orignal number
+        originalNum /= 10;
+    }
+
+    if (result == num)
+        cout << num << " is an Armstrong number.";
+    else
+        cout << num << " is not an Armstrong number.";
+
+    return 0;
+}
