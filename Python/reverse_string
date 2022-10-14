@@ -1,5 +1,0 @@
-def reversed_string(orig_string):
-    return orig_string[::-1]
-    
-input_var = input("String to reverse: ")
-reversed_string(input_var)
