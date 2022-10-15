@@ -14,6 +14,7 @@
 | Name | Github Link | Email ID |
 | ------|----------|---------- |
 | Aman Kumar | <a href="https://github.com/king04aman/">Aman Kumar</a> | <a href="mailto:aman.kumar@esportzvio.com">E-Mail</a> |
+| Jyoti Saini | <a href="https://github.com/Jyotisaini-2001/">Jyoti Saini</a> | <a href="mailto:js.saini267@gmail.com">E-Mail</a> |
 | Sarwagya Singh | <a href="https://github.com/0xsarwagya/">Sarwagya Singh</a> | <a href="mailto:sarwagya.singh@esportzvio.com">E-Mail</a> |
 | Prashant Kumar | <a href="https://github.com/prashantty/">Prashant Kumar</a> | <a href="mailto:prashantty9991@gmail.com">E-Mail</a> |
 | Kartik Gamot | <a href="https://github.com/kart027/">Kartik Gamot</a> | <a href="mailto:gamotkartik2002@gmail.com">E-Mail</a> |
