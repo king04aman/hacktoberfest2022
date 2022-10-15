@@ -1,0 +1,143 @@
+Problem:
+54.Spiral Matrix
+Given an m x n matrix, return all elements of the matrix in spiral order.
+Example 1:
+Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]
+Output: [1,2,3,6,9,8,7,4,5]
+Example 2:
+Input: matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
+Output: [1,2,3,4,8,12,11,10,9,5,6,7]
+ 
+
+Constraints:
+
+m == matrix.length
+n == matrix[i].length
+1 <= m, n <= 10
+-100 <= matrix[i][j] <= 100
+
+
+class Solution {
+public:
+    void helper(vector<vector<int>>& matrix,int rowStart,int rowEnd,int colStart,int colEnd,vector<int> &v){
+        //first row
+        for(int i=colStart;i<=colEnd;i++){
+            v.push_back(matrix[rowStart][i]);
+        }
+        
+        //last column
+        for(int i=rowStart+1;i<=rowEnd;i++){
+            v.push_back(matrix[i][colEnd]);
+        }
+        
+        //last row
+        for(int i=colEnd-1;i>=colStart;i--){
+            v.push_back(matrix[rowEnd][i]);
+        }
+        
+        //first column
+        for(int i=rowEnd-1;i>=rowStart+1;i--){
+            v.push_back(matrix[i][colStart]);
+        }
+    }
+    vector<int> spiralOrder(vector<vector<int>>& matrix) {
+        int n= matrix.size();
+        int m= matrix[0].size();
+        vector<int> v;
+        
+        //only one element
+        if(matrix[0].size()==1 && matrix.size() == 1){
+            v.push_back(matrix[0][0]);
+            return v;
+        }
+        
+        //only one column
+        if(matrix[0].size()==1 && matrix.size() > 1){
+            for(int i=0;i<matrix.size();i++){
+                v.push_back(matrix[i][0]);
+            }
+            return v;
+        }
+        
+        //only one row
+        if(matrix.size()==1 && matrix[0].size() > 1){
+            for(int i=0;i<matrix[0].size();i++){
+                v.push_back(matrix[0][i]);
+            }
+            return v;
+        }
+        
+        
+        //if rowSize < columnSize
+        if(matrix.size() <= matrix[0].size())
+        {
+            if(n%2!=0 )
+            {
+                int j=n/2;
+                int rowStart=0,rowEnd=n-1,colStart=0,colEnd=matrix[0].size()-1;
+                for(int i=0;i<j;i++)
+                {
+                    helper(matrix,rowStart,rowEnd,colStart,colEnd,v);
+                    rowStart++;
+                    colStart++;
+                    rowEnd--;
+                    colEnd--;
+                }
+                
+                for(int i=colStart;i<=colEnd;i++)
+                {
+                    v.push_back(matrix[rowStart][i]);
+                }
+                
+             }
+             else 
+             {
+                 int j=n/2;
+                 int rowStart=0,rowEnd=n-1,colStart=0,colEnd=matrix[0].size()-1;
+                 for(int i=0;i<j;i++){
+                     helper(matrix,rowStart,rowEnd,colStart,colEnd,v);
+                     rowStart++;
+                     colStart++;
+                     rowEnd--;
+                     colEnd--;
+                 }
+             }
+        }
+        
+        //if rowSize > columnSize 
+        else{
+            if(m%2!=0 )
+            {
+                int j=m/2;
+                int rowStart=0,rowEnd=n-1,colStart=0,colEnd=matrix[0].size()-1;
+                for(int i=0;i<j;i++)
+                {
+                    helper(matrix,rowStart,rowEnd,colStart,colEnd,v);
+                    rowStart++;
+                    colStart++;
+                    rowEnd--;
+                    colEnd--;
+                }
+                
+                for(int i=rowStart;i<=rowEnd;i++)
+                {
+                    v.push_back(matrix[i][colStart]);
+                }
+                
+             }
+             else 
+             {
+                 int j=m/2;
+                 int rowStart=0,rowEnd=n-1,colStart=0,colEnd=matrix[0].size()-1;
+                 for(int i=0;i<j;i++){
+                     helper(matrix,rowStart,rowEnd,colStart,colEnd,v);
+                     rowStart++;
+                     colStart++;
+                     rowEnd--;
+                     colEnd--;
+                 }
+             }
+        }
+        return v;
+    }
+};
