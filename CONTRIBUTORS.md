@@ -10,7 +10,7 @@
 
 <p>Make sure you have updated your Name, Github link & E-Mail Id (enter your e-mail just after mailto:)!!!</p>
 <br>
-  
+
 | Name | Github Link | Email ID |
 | ------|----------|---------- |
 | Aman Kumar | <a href="https://github.com/king04aman/">Aman Kumar</a> | <a href="mailto:aman.kumar@esportzvio.com">E-Mail</a> |
@@ -23,6 +23,7 @@
 | Apurva Dubey | <a href="https://github.com/umbridge/">Apurva Dubey</a> | <a href="mailto:apurva925dubey@gmail.com">E-Mail</a> |
 | Agus Cahyono | <a href="https://github.com/balitax/">Agus Cahyono</a> | <a href="mailto:cahyo.mamen@gmail.com">E-Mail</a> |
 | Gagan Chordia | <a href="https://github.com/gagan-gv/">Agus Cahyono</a> | <a href="mailto:chordiagagan@gmail.com">E-Mail</a> |
+| Maharshi Pandya | [Maharshi Pandya](https://github.com/Maharshi-Pandya) | <a href="mailto:maharshi.pandya2002@gmail.com">E-Mail</a> |
 | Roshan Kumar | <a href="https://github.com/coderoshan18093">Roshan Kumar</a> | <a href="mailto:anitamishraasansol@gmail.com">E-Mail</a>
 | Pranauv Kumar | <a href="https://github.com/Pranauv-Kumar1803/">Pranauv Kumar</a> | <a href="mailto:pranauv1803@gmail.com">E-Mail</a> |
 | Shubham Bawner | <a href="https://github.com/Shubhambawner/">Shubham Bawner</a> | <a href="mailto:wurtzreaxnwittigreaxn@gmail.com">E-Mail</a> |
