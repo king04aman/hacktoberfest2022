@@ -20,15 +20,28 @@ void bubbleSort(int arr[], int n)
     // recursive call
     bubbleSort(arr, n - 1);
 }
-
+void print(int a[],int n)
+{
+    int t;
+    for(t=0;t<n;t++)
+    {
+      cout<<a[t]<<" "; 
+    }
+    cout<<"\n";
+}
 int main()
 {
-    int arr[5] = {100, 2, 94, 33, 1};
-    bubbleSort(arr, 5);
-    cout << "Sorted Array : ";
-    for (int i = 0; i < 5; i++)
-    {
-        cout << arr[i] << " ";
-    }
-    return 0;
+    int n;
+cout<<"Enter the size of array:";
+cin>>n;
+int a[n];
+cout<<"\nEnter the elements of array:";
+for(int i=0;i<n;i++)
+{
+    cin>>a[i];
+}
+bubbleSort(a,n);
+cout<<"\nSorted array: ";
+print(a,n);
+return 0;
 }
