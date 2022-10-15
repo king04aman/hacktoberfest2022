@@ -1,0 +1,9 @@
+#Write a program to count vowel in a given string.
+# given a strinng s
+#solution
+vowels = ["a","e","i","o","u"]
+count = 0
+for c in s:
+  if c in s:
+    count+=1
+print(count)
