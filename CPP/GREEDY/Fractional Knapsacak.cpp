@@ -63,7 +63,7 @@ int main()
     int N = sizeof(arr) / sizeof(arr[0]);
  
     // Function call
-    cout << "Maximum value we can obtain = "
+    cout << "Maximum value we can obtain is equal to: "
          << fractionalKnapsack(W, arr, N);
     return 0;
 }
