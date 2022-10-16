@@ -2,6 +2,7 @@
 
 Please ensure your pull request adheres to the following guidelines:
 
+'
 - Star this repo to get latest updates.
 - Start the Name with a capital.
 - Give your file a proper extension according to language. Ex: .py, .java, .js, .html etc.
