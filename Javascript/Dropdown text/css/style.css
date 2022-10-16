@@ -1,0 +1,102 @@
+body{
+    background: url(../assets/kjl.jpg);
+    position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+p{
+    margin: 0;
+}
+
+.malta{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+}
+
+
+.con{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 0  20px rgb(61, 58, 58);
+    max-width: 800px;
+    margin: 1rem;
+
+}
+
+
+.question{
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+
+}
+.question:hover{
+    cursor: pointer;
+}
+
+.answer{
+    margin-top: 03px;
+    overflow: auto;
+    height: 80px;
+    transition: all 1s;
+
+}
+
+
+
+.class-hide {
+    height: 0;
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
