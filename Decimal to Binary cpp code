@@ -1,0 +1,22 @@
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int decimalToBinary(int num)
+{
+    int ans=0,rem=0,i=0,count=0;
+    while(num>0)
+    {
+        rem=num%2;
+        ans+=rem*pow(10,count);
+        i++;
+        num/=2;
+        count++;
+    }
+    return ans;
+}
+int main()
+{ int num=8;
+int dec=decimalToBinary(num);
+cout<<"Decimal of the number "<<num<<"  is  "<<dec<<endl;
+return 0;
+}
