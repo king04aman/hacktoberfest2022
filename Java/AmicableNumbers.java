@@ -1,4 +1,3 @@
-package com.topics.mathsForDSA.otherThanBitwise;
 
 public class AmicableNumbers {
     public static void main(String[] args) {
