@@ -1,3 +1,5 @@
+/* by ssy2306 */
+
 #include<iostream>
 #include<stdio.h>
 #include<string.h>
