@@ -11,7 +11,7 @@ void printFloydTriangle(int n)
 		cout << endl;
 	}
 }
-
+// Maheshparihar231
 int main()
 {
 	printFloydTriangle(6);
