@@ -10,7 +10,7 @@
 
 <p>Make sure you have updated your Name, Github link & E-Mail Id (enter your e-mail just after mailto:)!!!</p>
 <br>
-  
+
 | Name | Github Link | Email ID |
 | ------|----------|---------- |
 | Aman Kumar | <a href="https://github.com/king04aman/">Aman Kumar</a> | <a href="mailto:aman.kumar@esportzvio.com">E-Mail</a> |
@@ -32,6 +32,7 @@
 | Shwetha Srikanth | <a href="https://github.com/shwe14101/">Shwetha Srikanth</a> | <a href="mailto:shwethasrikanth14@gmail.com">E-Mail</a> |
 | Rishabh Srivastava | <a href="https://github.com/RishabhSrivastava1423">Rishabh Srivastava</a> | <a href="mailto:rishabhsrivastava1409@gmail.com">E-Mail</a> |
 | Mitanshi Lodha | <a href="https://github.com/Mitanshilodha/">Mitanshi Lodha</a> | <a href="mailto:lodhamitanshi@gmail.com">E-Mail</a> |
+| ErxrilOwl | <a href="https://github.com/ErxrilOwl/">ErxrilOwl</a> | <a href="#">E-Mail</a> |
 
 Thanks to everyone who helped in building this Repository :)
 

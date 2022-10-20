@@ -10,9 +10,4 @@ function checkPalindrome(string) {
     return flase;
 }
 
-// take input
-const string = prompt('Enter the string: ');
-
-const value = checkPalindrome(string);
-
-console.log(value);
+// take 
