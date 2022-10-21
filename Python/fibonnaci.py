@@ -11,7 +11,6 @@ def fibonacci(n):
             fib_list.append(1)
         else:
             fib_list.append(fib_list[i-1]+fib_list[i-2])
-
     for i in fib_list:
         print(i)
 
