@@ -1,0 +1,9 @@
+a= (input('Input some string?   '))
+
+def reverse(a):
+    
+    for i in range(len(a)):
+        b=a[len(a)-i-1]
+        print(b,end='')
+        
+reverse(a)
