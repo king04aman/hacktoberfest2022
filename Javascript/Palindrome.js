@@ -1,18 +1,11 @@
-// program to check if the string is palindrome or not
-// contributor: Shubhambawner 
-
-function checkPalindrome(string) {
-    for (let i = 0; i < string.length / 2; i++) 
-        if (string[i] !== string[len - 1 - i]) 
-            return true;
-        
-    
-    return flase;
+function checkPalindrome(num) {
+    const reverseNum = num.split("").reverse().join("");
+    if(num == reverseNum) {
+        console.log('It is palindrome');
+    }
+    else {
+        console.log('It is not palindrome');
+    }
 }
-
-// take input
-const string = prompt('Enter the string: ');
-
-const value = checkPalindrome(string);
-
-console.log(value);
+const num = prompt('Enter a number: ');
+checkPalindrome(num);
