@@ -1,103 +1,171 @@
-#include <bits/stdc++.h>
+#include <iomanip>
+#include <iostream>
 using namespace std;
 
-/*
-Input Format: size of the array and the contents of the array
-Output Format: the sorted array
-ALgorithm: Radix Sort
-Time Complexity: O((n+b) * logb(k)), where n is the number of elements, b is the base of the number, 
-				 k is the greatest element of the array
-Space Complexity: O(n)
+#define NARRAY 14   // Array size
+#define NBUCKET 10  // Number of buckets
+#define INTERVAL 10  // Each bucket capacity
 
-Sample Input and Output
+struct Node {
+  int data;
+  struct Node *next;
+};
 
-**Sample Input 1:**
+void BucketSort(int arr[]);
+struct Node *InsertionSort(struct Node *list);
+void print(int arr[]);
+void printBuckets(struct Node *list);
+int getBucketIndex(int value);
 
-Enter the number of elements of the array: 8
+// Sorting function
+void BucketSort(int arr[]) {
+  int i, j;
+  struct Node **buckets;
 
-Enter the array elements : 2632 1515 1495 9657 1452 2053 1025 3050
+  // Create buckets and allocate memory size
+  buckets = (struct Node **)malloc(sizeof(struct Node *) * NBUCKET);
 
-The sorted array is : 1025 1452 1495 1515 2053 2632 3050 9657
-
-
-**Sample Input 2:**
-
-Enter the number of elements of the array: 10
-
-Enter the array elements : 214 632 789 147 896 325 741 89 10 30
-
-The sorted array is : 10 30 89 147 214 325 632 741 789 896
-*/
-
-// utility function that sorts the array elements based on a particular digit of the array element
-void countSort(vector<int> &a, int exp)
-{
-  int n = (int)a.size();
-  vector<int> tmp(n); // tmp array
-  int i, count[10] = {0};
-
-  // Store count of occurrences in count vector
-  for (i = 0; i < n; i++)
-    count[(a[i] / exp) % 10]++;
-
-  // Change count[i] so that count[i] now contains actual
-  // position of this digit in tmp vector
-  for (i = 1; i < 10; i++)
-    count[i] += count[i - 1];
-
-  // Build the tmp array
-  for (i = n - 1; i >= 0; i--)
-  {
-    tmp[count[(a[i] / exp) % 10] - 1] = a[i];
-    count[(a[i] / exp) % 10]--;
+  // Initialize empty buckets
+  for (i = 0; i < NBUCKET; ++i) {
+    buckets[i] = NULL;
   }
 
-  // Copy the tmp vector to a, so that vector a now
-  // contains sorted numbers according to current digit
-  a = tmp;
+  // Fill the buckets with respective elements
+  for (i = 0; i < NARRAY; ++i) {
+    struct Node *current;
+    int pos = getBucketIndex(arr[i]);
+    current = (struct Node *)malloc(sizeof(struct Node));
+    current->data = arr[i];
+    current->next = buckets[pos];
+    buckets[pos] = current;
+  }
+
+  // Print the buckets along with their elements
+  for (i = 0; i < NBUCKET; i++) {
+    cout << "Bucket[" << i << "] : ";
+    printBuckets(buckets[i]);
+    cout << endl;
+  }
+
+  // Sort the elements of each bucket
+  for (i = 0; i < NBUCKET; ++i) {
+    buckets[i] = InsertionSort(buckets[i]);
+  }
+
+  cout << "-------------" << endl;
+  cout << "Bucktets after sorted" << endl;
+  for (i = 0; i < NBUCKET; i++) {
+    cout << "Bucket[" << i << "] : ";
+    printBuckets(buckets[i]);
+    cout << endl;
+  }
+
+  // Put sorted elements on arr
+  for (j = 0, i = 0; i < NBUCKET; ++i) {
+    struct Node *node;
+    node = buckets[i];
+    while (node) {
+      arr[j++] = node->data;
+      node = node->next;
+    }
+  }
+
+  for (i = 0; i < NBUCKET; ++i) {
+    struct Node *node;
+    node = buckets[i];
+    while (node) {
+      struct Node *tmp;
+      tmp = node;
+      node = node->next;
+      free(tmp);
+    }
+  }
+  free(buckets);
+  return;
 }
 
-// Radix Sort implementation
-void radixsort(vector<int> &a)
-{
-  int m = *max_element(a.begin(), a.end());
+// Function to sort the elements of each bucket
+struct Node *InsertionSort(struct Node *list) {
+  struct Node *k, *nodeList;
+  if (list == 0 || list->next == 0) {
+    return list;
+  }
 
-  /*
-	Do counting sort for every digit. Note that instead
-	of passing digit number, exp is passed. exp is 10^i
-	where i is current digit number
-	*/
-  for (int exp = 1; m / exp > 0; exp *= 10)
-  {
-    countSort(a, exp);
+  nodeList = list;
+  k = list->next;
+  nodeList->next = 0;
+  while (k != 0) {
+    struct Node *ptr;
+    if (nodeList->data > k->data) {
+      struct Node *tmp;
+      tmp = k;
+      k = k->next;
+      tmp->next = nodeList;
+      nodeList = tmp;
+      continue;
+    }
+
+    for (ptr = nodeList; ptr->next != 0; ptr = ptr->next) {
+      if (ptr->next->data > k->data)
+        break;
+    }
+
+    if (ptr->next != 0) {
+      struct Node *tmp;
+      tmp = k;
+      k = k->next;
+      tmp->next = ptr->next;
+      ptr->next = tmp;
+      continue;
+    } else {
+      ptr->next = k;
+      k = k->next;
+      ptr->next->next = 0;
+      continue;
+    }
+  }
+  return nodeList;
+}
+
+int getBucketIndex(int value) {
+  return value / INTERVAL;
+}
+
+// Print buckets
+void print(int ar[]) {
+  int i;
+  for (i = 0; i < NARRAY; ++i) {
+    cout << setw(3) << ar[i];
+  }
+  cout << endl;
+}
+
+void printBuckets(struct Node *list) {
+  struct Node *cur = list;
+  while (cur) {
+    cout << setw(3) << cur->data;
+    cur = cur->next;
   }
 }
 
-// utility function to print the array
-void print(vector<int> &a)
-{
-  for (int u : a)
+// Driver code
+int main(void) {
+  int no;
+  cout<<"Enter Total Number of Element"<<endl;
+  cin>>no;
+  int array[no];
+  for(int i=0;i<no;i++)
   {
-    cout << u << " ";
+      cout<<"Enter "<<i+1<<"th Position Element"<<endl;
+      cin>>array[i];
   }
-  cout << '\n';
-}
 
-// Driver Code
-int main()
-{
-  int n;
-  vector<int> a;
-  cout << "\nEnter the number of elements of the array: ";
-  cin >> n;
-  a.resize(n);
-  cout << "\nEnter the array elements : \n";
-  for (int i = 0; i < n; i++)
-  {
-    cin >> a[i];
-  }
-  radixsort(a);
-  cout << "\nThe sorted array is : ";
-  print(a);
-  return 0;
+  cout << "Initial array: " << endl;
+  print(array);
+  cout << "-------------" << endl;
+
+  BucketSort(array);
+  cout << "-------------" << endl;
+  cout << "Sorted array: " << endl;
+  print(array);
 }
