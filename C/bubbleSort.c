@@ -1,47 +1,50 @@
-#include<stdio.h>
+#include <stdio.h>
 
-void swap(int* x, int* y)
+
+void bubble_sort(int *a, int n)
 {
-	int temp = *x;
-	*x = *y;
-	*y = temp;
-}
 
-int main()
-{
-  int i,j,n;
-	int arr[10];
-	printf("Enter the number of elements\n");
-	scanf("%d",&n);
-    for(i=0;i<n;i++)
-        scanf("%d",&arr[i]);
+    int temp;
 
-    printf("Unsorted Array : \n");
-	for (i = 0; i < n; i++)
-		printf("%d ", arr[i]);
-	printf("\n");
-
-    for(i=0;i<n-1;i++)
+    for (int i = 0; i < n; i++)
     {
-        for(j=i;j<n/2;i++)
+        for (int j = 0; j < n - i - 1; j++)
         {
-            if(arr[j] < arr[j+1])
-                swap(&arr[j],&arr[j+1]);
-        }
 
-        for(j=n-1;j<n/2;j--)
-        {
-            if(arr[j] < arr[j+1])
-                swap(&arr[j], &arr[j+1]);
+            if (a[j] > a[j + 1])
+            {
+
+                temp = a[j];
+                a[j] = a[j + 1];
+                a[j + 1] = temp;
+            }
         }
     }
-
-
-	printf("Sorted array : \n");
-	for (i = 0; i < n; i++)
-		printf("%d ", arr[i]);
-	printf("\n");
-
-	return 0;
 }
+int main()
+{
 
+    int n;
+    
+    printf("Enter the number of Elements = ");
+    scanf("%d",&n);
+    
+    int a[n];
+   
+    printf("Enter the elemets of array = \n\n");
+    for (int i = 0; i < n; i++)
+    { printf("Enter %d Element = ",i+1);
+      scanf("%d",&a[i]);
+    }
+
+    bubble_sort(a, n);
+
+   
+    printf("\nThe sorted array = \n\n");
+    for (int i = 0; i < n; i++)
+    {
+       
+        printf("%d ",a[i]);
+    }
+    return 0;
+}
