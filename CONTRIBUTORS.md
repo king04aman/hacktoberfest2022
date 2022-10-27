@@ -33,6 +33,9 @@
 | Rishabh Srivastava | <a href="https://github.com/RishabhSrivastava1423">Rishabh Srivastava</a> | <a href="mailto:rishabhsrivastava1409@gmail.com">E-Mail</a> |
 | Mitanshi Lodha | <a href="https://github.com/Mitanshilodha/">Mitanshi Lodha</a> | <a href="mailto:lodhamitanshi@gmail.com">E-Mail</a> |
 
+
+| Ayan Chakrabortty  | <a href="https://github.com/ayanchakrabortty/">Ayan Chakrabortty</a> | <a href="mailto:learn.ayanc@gmail.com">E-Mail</a> |
+
 Thanks to everyone who helped in building this Repository :)
 
 # Happy Hacking 💻
