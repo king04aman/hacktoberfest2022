@@ -12,6 +12,7 @@ int main(void)
      scanf("%d", &seed);
      srand(seed);
 
+//Checks user input is valid (1,2,3)
     for (i = 0; i < 10; i++)
     {
         scanf(" %d", &userChoice);
@@ -20,10 +21,10 @@ int main(void)
                scanf("%d", &userChoice);
               }
 
-
-        computerChoice = rand() % 3 + 1;
 // This is the computer's choice
+        computerChoice = rand() % 3 + 1;
 
+// This is the scoring system
         if (userChoice == 1 && computerChoice == 3)
         {
             printf("User choice is ROCK.\nComputer choice is SCISSORS.\nUser wins because ROCK beats SCISSORS.\n");
@@ -86,7 +87,7 @@ int main(void)
 
 
     }
-
+// This is the final score
     if (userScore > computerScore) {
         printf("In 10 games, user won %d times and computer won %d times. \n", userScore, computerScore);
     }
