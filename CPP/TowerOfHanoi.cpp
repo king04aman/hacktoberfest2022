@@ -1,57 +1,28 @@
-#include<stack>
-#include<iostream>
+// C++ recursive function to
+// solve tower of hanoi puzzle
+#include <bits/stdc++.h>
 using namespace std;
 
-template <typename T> void printStack(stack<T> S)
+void towerOfHanoi(int n, char from_rod, char to_rod,
+				char aux_rod)
 {
-    T x;
-    if(S.empty())
-        return;
-    x=S.top();
-    S.pop();
-    printStack(S);
-    cout<<x<<"  ";
+	if (n == 0) {
+		return;
+	}
+	towerOfHanoi(n - 1, from_rod, aux_rod, to_rod);
+	cout << "Move disk " << n << " from rod " << from_rod
+		<< " to rod " << to_rod << endl;
+	towerOfHanoi(n - 1, aux_rod, to_rod, from_rod);
 }
 
-
-template<typename T>
-void Fuc(stack<T> &A,stack<T> &B,stack<T> &C,int n)
-{
-    if(n==0)
-        return;
-    Fuc(A,C,B,n-1);
-    T x=A.top();
-    A.pop();
-    C.push(x);
-    Fuc(B,A,C,n-1);
-    return;
-}
-
+// Driver code
 int main()
 {
-    stack<int> Start,Aux,Final;
-    int N;
-    cout<<"Enter the Size of the stack";
-    cin>>N;
-    cout<<"Enter the elements of the Tower";
-    for(int i=0;i<N;i++)
-    {
-        int x;
-        cin>>x;
-        Start.push(x);
-    }
-    cout<<"\nStarting Stack :";
-    printStack(Start);
-    cout<<"\nFinal Stack at starting : ";
-    printStack(Final);
+	int N = 3;
 
-    cout<<endl;
-    Fuc(Start,Aux,Final,Start.size());
-
-    cout<<"\nStarting Stack :";
-    printStack(Start);
-    cout<<"\nFinal Stack After Transfer :";
-    printStack(Final);
-
-    return 0;
+	// A, B and C are names of rods
+	towerOfHanoi(N, 'A', 'C', 'B');
+	return 0;
 }
+
+
