@@ -22,20 +22,20 @@ Hacktoberfest encourages participation in the open source community, which grows
  - 💻 Go
 
 ## Programs
- - Write a program to print the sum of digit of a number.
+ - Write a program to print the sum of digits of a number.
  - Write a program to print the Fibonacci series up to a given number.
- - Write a program to check a given number is palindrom or not.
- - Write a program to check a given number is armstrong or not.
- - Write a program to find different between sum and product of a number.
+ - Write a program to check if a given number is palindrome or not.
+ - Write a program to check if a given number is armstrong or not.
+ - Write a program to find differentiate between sum and product of a number.
  - Write a program to find all setbits in a number.
  - Write a program to print the Floyds triangle.
  - Write a program to swap the values of two variables.
- - Write a program to find given number is power of two or not.
+ - Write a program to find if the given number is power of two or not.
  - Write a program to print the reverse of a given string.
- - Write a program to merge two sorted array without extra space.
- - Write a program to count vowel in a given string.
- - Write a program for addition two nxm matrices.
- - Write a program for multiplication fo nxm matrices.
+ - Write a program to merge two sorted array without extra spaces.
+ - Write a program to count the number of vowels in a given string.
+ - Write a program for the addition two nxm matrices.
+ - Write a program for the multiplication fo nxm matrices.
 
 
 ### Don't forget to read the [contributing](CONTRIBUTING.md) rules to be successfully merged your PR and get rewards!!!
