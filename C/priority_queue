@@ -1,0 +1,129 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+extern int arr[50][30], end[50][2], maxprior, len;
+
+void insertq(int pr, int item)
+{
+  if (end[pr][0] == -1 && end[pr][1] == -1)
+  {
+    end[pr][1] = end[pr][0] = 0;
+  }
+  else
+    end[pr][1] = (end[pr][1] + 1) % len;
+  arr[pr][end[pr][1]] = item;
+}
+
+void deleteq()
+{
+  int i = 0;
+
+  while (i < maxprior)
+  {
+    if (end[i][0] == -1 && end[i][1] == -1)
+    {
+      i++;
+      continue;
+    }
+    else if (end[i][0] == end[i][1])
+    {
+      printf(" Element deleted : %d. \n ", arr[i][end[i][0]]);
+      end[i][0] = end[i][1] = -1;
+      break;
+    }
+    else
+    {
+      printf(" Element deleted : %d .\n", arr[i][end[i][0]]);
+      end[i][0] = (end[i][0] + 1) % len;
+      break;
+    }
+    i++;
+  }
+  if (i == maxprior)
+    printf(" Queue underflow  \n ");
+}
+
+void displayq()
+{
+  int i = 0, j;
+
+  printf("\n");
+  printf(" Priority \t\tElements \n \n");
+
+  for (i = 0; i < maxprior; i++)
+  {
+    printf("%d\t\t\t", i);
+    if (end[i][0] == -1 && end[i][1] == -1)
+      printf("--Empty--");
+    else if (end[i][0] <= end[i][1])
+    {
+      for (j = end[i][0]; j <= end[i][1]; j++)
+        printf("%d\t ", arr[i][j]);
+    }
+    else
+    {
+      for (j = 0; j <= end[i][1]; j++)
+        printf("%d\t ", arr[i][j]);
+      for (j = end[i][0]; j <= len - 1; j++)
+        printf("%d\t", arr[i][j]);
+    }
+    printf("\n");
+  }
+}
+
+int arr[50][30], end[50][2], maxprior, len;
+
+void main()
+{
+
+  int ch, i, pr, item, j;
+  printf("Enter max priority : ");
+  scanf("%d", &maxprior);
+  printf("Enter length: ");
+  scanf("%d", &len);
+  for (i = 0; i < maxprior; i++)
+    for (j = 0; j < 2; j++)
+      end[i][j] = -1;
+  printf("Menu driven \n1 . Insert \n2 . Delete \n3 . Display \n4 . Exit \n ");
+
+  while (1)
+  {
+    printf(" \nEnter choice : \n");
+    scanf("%d", &ch);
+    switch (ch)
+    {
+    case 1:
+    {
+      printf("Enter priority : ");
+      scanf("%d", &pr);
+      if (pr > maxprior)
+        printf("Insertion not possible .\n ");
+      else
+      {
+        if ((end[pr][0] == 0 && end[pr][1] == len - 1) ||
+            (end[pr][1] + 1 == end[pr][0]))
+          printf("Queue overflow \n ");
+        else
+        {
+          printf("Enter item to insert : ");
+          scanf("%d", &item);
+          insertq(pr, item);
+          displayq();
+        }
+      }
+      break;
+    }
+    case 2:  deleteq();
+             break;
+
+    case 3:  displayq();
+             break;
+
+    case 4:  exit(0);
+              break;
+
+    default: printf("Invalid Input!!\n");
+    
+    }
+  }
+}
