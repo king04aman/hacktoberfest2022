@@ -32,6 +32,8 @@
 | Shwetha Srikanth | <a href="https://github.com/shwe14101/">Shwetha Srikanth</a> | <a href="mailto:shwethasrikanth14@gmail.com">E-Mail</a> |
 | Rishabh Srivastava | <a href="https://github.com/RishabhSrivastava1423">Rishabh Srivastava</a> | <a href="mailto:rishabhsrivastava1409@gmail.com">E-Mail</a> |
 | Mitanshi Lodha | <a href="https://github.com/Mitanshilodha/">Mitanshi Lodha</a> | <a href="mailto:lodhamitanshi@gmail.com">E-Mail</a> |
+| Pretam Chandra | <a href="https://github.com/pretam591">Pretam Chandra</a> | 
+<a href="mailto:pretam591@gmail.com">E-Mail</a> |
 
 Thanks to everyone who helped in building this Repository :)
 
